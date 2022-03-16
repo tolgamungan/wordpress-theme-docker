@@ -1,0 +1,371 @@
+/*
+ * Globals
+ */
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    color: #555;
+}
+
+
+/*
+   * Override Bootstrap's default container.
+   */
+
+@media (min-width: 1200px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/*
+   * Masthead for nav
+   */
+
+.blog-masthead {
+    background-color: #428bca;
+    -webkit-box-shadow: inset 0 -2px 5px rgba(0, 0, 0, .1);
+    box-shadow: inset 0 -2px 5px rgba(0, 0, 0, .1);
+}
+
+/* Nav links */
+.blog-nav-item {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    font-weight: 500;
+    color: #cdddeb;
+}
+
+.blog-nav-item:hover,
+.blog-nav-item:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Active state gets a caret at the bottom */
+.blog-nav .active {
+    color: #fff;
+}
+
+.blog-nav .active:after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -5px;
+    vertical-align: middle;
+    content: " ";
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid;
+    border-left: 5px solid transparent;
+}
+
+
+/*
+   * Blog name and description
+   */
+
+.blog-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.blog-title {
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 60px;
+    font-weight: normal;
+}
+
+.blog-description {
+    font-size: 20px;
+    color: #999;
+}
+
+
+/*
+   * Main column and sidebar layout
+   */
+
+.blog-main {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Sidebar modules for boxing content */
+.sidebar-module {
+    padding: 15px;
+    margin: 0 -15px 15px;
+}
+
+.sidebar-module-inset {
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}
+
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Pagination */
+.pager {
+    margin-bottom: 60px;
+    text-align: left;
+}
+
+.pager>li>a {
+    width: 140px;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+
+/*
+   * Blog posts
+   */
+
+.blog-post {
+    margin-bottom: 60px;
+    font-size: 18px;
+}
+
+.blog-post-title {
+    margin-bottom: 5px;
+    font-size: 40px;
+}
+
+.blog-post-meta {
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-family: Helvetica, sans-serif;
+    font-weight: 700;
+    color: #777;
+}
+
+.blog-post-meta>a {
+    text-decoration: none;
+    color: #999 !important;
+}
+
+
+/*
+   * Footer
+   */
+footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:140px;   /* Height of the footer */
+    background:#6cf;
+ }
+.blog-footer {
+    padding: 40px 0;
+    color: #999;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: 1px solid #e5e5e5;
+}
+
+.blog-footer p:last-child {
+    margin-bottom: 0;
+}
+
+.title-brand {
+    font-family: 'Raleway', sans-serif;
+}
+
+.title-brand>a {
+    text-decoration: none;
+    color: transparent;
+    font-size: 3rem;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: url('../img/text-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+    transition: 0.3s;
+
+}
+
+.title-brand>a:hover {
+    color: black;
+}
+
+.blog-post-title {
+    font-family: 'Raleway', sans-serif;
+}
+
+.blog-post-title>a {
+    text-decoration: none;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: url('../img/text-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+    font-size: 2.25rem;
+    transition: 0.3s;
+}
+
+.blog-post-title {
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: url('../img/text-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+    font-size: 2.25rem;
+    transition: 0.3s;
+}
+
+.blog-post-title:hover {
+    color: black;
+}
+
+.blog-post-title>a:hover {
+    color: black;
+}
+
+li.page-item:not(:empty) {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    width: 8rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid 1px #444;
+    border-radius: 50px;
+}
+
+li.page-item >a {
+    text-decoration: none;
+}
+
+li.page_item > a {
+    text-decoration: none;
+    color: #777;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+
+}
+
+li.page-item > a::marker {
+    display: none;
+}
+
+aside {
+    list-style: none;
+}
+
+blockquote {
+    border-left: solid 3px black;
+    padding-left: 1rem;
+    margin-left: .5rem;
+}
+figcaption {
+    font-size: .6rem !important;
+}
+@media (min-width: 992px) { 
+    
+    .lg-fixed {
+        position: fixed;
+        width: 22%;
+    }
+
+    .left-aside {
+        float: left;
+    }
+    .left-aside > li {
+        float: right;
+    }
+ }
+
+
+ #social-test {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 30px;
+}
+#social-test .social {
+    padding-left: 0px;
+}
+#social-test li {
+    display: inline-block;
+}
+#social-test li a {
+    color: #000;
+    border-radius: 6px;
+    list-style-type: none;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 45px !important;
+    padding: 1%;
+    border: 1px solid #777;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    transition: ease .3s;
+}
+#social-test li a:hover {
+    color: #000;
+    border: 1px solid #000;
+}
+.social:hover > li {
+    opacity: 0.5;
+}
+.social:hover > li:hover {
+    opacity: 1;
+}
+
+.search_input {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.search_btn {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-image: url('../img/text-bg.jpg');
+}
+
+.blog-post p {
+    color: #777;
+}
+
+.the-content > h1,.the-content >  h2,.the-content >  h3,.the-content >  h4 {
+    font-family: 'Raleway', sans-serif;
+    margin-top: 3rem;
+    border-bottom: solid 3px #777;
+    padding-bottom: .3rem;
+    margin-bottom: 1.4rem;
+}
+
+.syntaxhighlighter {
+    border-radius: 10px;
+}
+
+.continue-reading-link {
+    text-decoration: none;
+    color: #eb058d;
+}
+
+.continue-reading-link:hover {
+    color: #000;
+}
+
+.blog-post-meta {
+    color: #999 !important;
+    font-size: 1rem;
+}
